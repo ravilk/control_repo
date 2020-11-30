@@ -3,5 +3,8 @@ node default {
    ensure  => file,
    content => 'This is Ravil first puppet file',
    owner   => 'root', 
-   }
+      }
+ file {'/root/README':
+   owner => 'root'
+      }
 } 
